@@ -36,22 +36,23 @@ namespace greeenEats
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.chooseLabel = new System.Windows.Forms.Label();
             this.shopDetails = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.soCafe = new System.Windows.Forms.Label();
             this.gunaPolarAreaDataset1 = new Guna.Charts.WinForms.GunaPolarAreaDataset();
             this.gunaPolarAreaDataset2 = new Guna.Charts.WinForms.GunaPolarAreaDataset();
-            this.label1 = new System.Windows.Forms.Label();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.shopDetails.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
@@ -110,35 +111,22 @@ namespace greeenEats
             this.shopDetails.TabIndex = 4;
             this.shopDetails.Paint += new System.Windows.Forms.PaintEventHandler(this.shopDetails_Paint);
             // 
-            // soCafe
+            // guna2ImageButton1
             // 
-            this.soCafe.AutoSize = true;
-            this.soCafe.BackColor = System.Drawing.Color.Transparent;
-            this.soCafe.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.soCafe.Location = new System.Drawing.Point(55, 120);
-            this.soCafe.Name = "soCafe";
-            this.soCafe.Size = new System.Drawing.Size(65, 19);
-            this.soCafe.TabIndex = 1;
-            this.soCafe.Text = "SoCafe";
-            // 
-            // gunaPolarAreaDataset1
-            // 
-            this.gunaPolarAreaDataset1.Label = "PolarArea1";
-            // 
-            // gunaPolarAreaDataset2
-            // 
-            this.gunaPolarAreaDataset2.Label = "PolarArea2";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(16, 154);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 65);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "So Cafe is a one of restaurant \r\nin university. Various food \r\nitems are availabl" +
-    "e in this\r\n shop. You can order any\r\n kind of foodfrom this shop";
+            this.guna2ImageButton1.AnimatedGIF = true;
+            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(220, 220);
+            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(200, 200);
+            this.guna2ImageButton1.IndicateFocus = true;
+            this.guna2ImageButton1.Location = new System.Drawing.Point(3, 3);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(179, 114);
+            this.guna2ImageButton1.TabIndex = 4;
             // 
             // guna2Button1
             // 
@@ -164,6 +152,36 @@ namespace greeenEats
             this.guna2Button1.Text = "GoToStore";
             this.guna2Button1.UseTransparentBackground = true;
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(16, 154);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(150, 65);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "So Cafe is a one of restaurant \r\nin university. Various food \r\nitems are availabl" +
+    "e in this\r\n shop. You can order any\r\n kind of foodfrom this shop";
+            // 
+            // soCafe
+            // 
+            this.soCafe.AutoSize = true;
+            this.soCafe.BackColor = System.Drawing.Color.Transparent;
+            this.soCafe.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.soCafe.Location = new System.Drawing.Point(55, 120);
+            this.soCafe.Name = "soCafe";
+            this.soCafe.Size = new System.Drawing.Size(65, 19);
+            this.soCafe.TabIndex = 1;
+            this.soCafe.Text = "SoCafe";
+            // 
+            // gunaPolarAreaDataset1
+            // 
+            this.gunaPolarAreaDataset1.Label = "PolarArea1";
+            // 
+            // gunaPolarAreaDataset2
+            // 
+            this.gunaPolarAreaDataset2.Label = "PolarArea2";
             // 
             // guna2Panel2
             // 
@@ -259,6 +277,23 @@ namespace greeenEats
             this.guna2Panel3.Size = new System.Drawing.Size(185, 285);
             this.guna2Panel3.TabIndex = 6;
             // 
+            // guna2ImageButton3
+            // 
+            this.guna2ImageButton3.AnimatedGIF = true;
+            this.guna2ImageButton3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageButton3.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton3.HoverState.ImageSize = new System.Drawing.Size(220, 220);
+            this.guna2ImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton3.Image")));
+            this.guna2ImageButton3.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton3.ImageRotate = 0F;
+            this.guna2ImageButton3.ImageSize = new System.Drawing.Size(200, 200);
+            this.guna2ImageButton3.IndicateFocus = true;
+            this.guna2ImageButton3.Location = new System.Drawing.Point(3, 3);
+            this.guna2ImageButton3.Name = "guna2ImageButton3";
+            this.guna2ImageButton3.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton3.Size = new System.Drawing.Size(179, 114);
+            this.guna2ImageButton3.TabIndex = 4;
+            // 
             // guna2Button3
             // 
             this.guna2Button3.Animated = true;
@@ -305,39 +340,19 @@ namespace greeenEats
             this.label5.TabIndex = 1;
             this.label5.Text = "Juice Bar";
             // 
-            // guna2ImageButton1
+            // guna2Button4
             // 
-            this.guna2ImageButton1.AnimatedGIF = true;
-            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(220, 220);
-            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(200, 200);
-            this.guna2ImageButton1.IndicateFocus = true;
-            this.guna2ImageButton1.Location = new System.Drawing.Point(3, 3);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(179, 114);
-            this.guna2ImageButton1.TabIndex = 4;
-            // 
-            // guna2ImageButton3
-            // 
-            this.guna2ImageButton3.AnimatedGIF = true;
-            this.guna2ImageButton3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton3.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton3.HoverState.ImageSize = new System.Drawing.Size(220, 220);
-            this.guna2ImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton3.Image")));
-            this.guna2ImageButton3.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton3.ImageRotate = 0F;
-            this.guna2ImageButton3.ImageSize = new System.Drawing.Size(200, 200);
-            this.guna2ImageButton3.IndicateFocus = true;
-            this.guna2ImageButton3.Location = new System.Drawing.Point(3, 3);
-            this.guna2ImageButton3.Name = "guna2ImageButton3";
-            this.guna2ImageButton3.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton3.Size = new System.Drawing.Size(179, 114);
-            this.guna2ImageButton3.TabIndex = 4;
+            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button4.ForeColor = System.Drawing.Color.White;
+            this.guna2Button4.Location = new System.Drawing.Point(540, 101);
+            this.guna2Button4.Name = "guna2Button4";
+            this.guna2Button4.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button4.TabIndex = 7;
+            this.guna2Button4.Text = "guna2Button4";
             // 
             // ChooseForm
             // 
@@ -345,6 +360,7 @@ namespace greeenEats
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(803, 500);
+            this.Controls.Add(this.guna2Button4);
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.shopDetails);
@@ -389,5 +405,6 @@ namespace greeenEats
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button4;
     }
 }
