@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace greeenEats
 {
-    public partial class signupform : Form
+    public partial class starting_form : Form
     {
-        public signupform()
+        public starting_form()
         {
             InitializeComponent();
         }
@@ -46,7 +46,7 @@ namespace greeenEats
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            signinform objs= new signinform();
+            signup objs= new signup();
             objs.Show();
             this.Hide();
         }

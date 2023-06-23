@@ -39,5 +39,13 @@ namespace greeenEats
             this.Hide();
 
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            staffLogin obj_log = new staffLogin();
+            obj_log.Show();
+            this.Hide();
+
+        }
     }
 }

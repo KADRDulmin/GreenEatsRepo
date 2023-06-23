@@ -41,5 +41,13 @@ namespace greeenEats
         {
 
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            foodSearch objfood = new foodSearch();
+            objfood.Show();
+            this.Hide();
+
+        }
     }
 }
