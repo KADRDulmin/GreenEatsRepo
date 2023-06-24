@@ -81,5 +81,12 @@ namespace greeenEats
         {
 
         }
+
+        private void gotoCheckoutBtn_Click(object sender, EventArgs e)
+        {
+            Cart objtoCart = new Cart();
+            objtoCart.Show();
+            this.Hide();
+        }
     }
 }

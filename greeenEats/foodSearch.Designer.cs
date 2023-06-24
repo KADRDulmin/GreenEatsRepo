@@ -54,10 +54,8 @@ namespace greeenEats
             this.price_food_shortEats = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.shortEats_category = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.restaurant_name = new System.Windows.Forms.Label();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2GradientPanel10 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2CircleButton3 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
@@ -157,6 +155,9 @@ namespace greeenEats
             this.guna2CircleButton16 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.gotoCheckoutBtn = new Guna.UI2.WinForms.Guna2Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.guna2GradientPanel3.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
@@ -166,7 +167,6 @@ namespace greeenEats
             this.guna2GradientPanel8.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
             this.foodCard_shortEats.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.guna2GradientPanel10.SuspendLayout();
             this.guna2GradientPanel11.SuspendLayout();
@@ -179,6 +179,7 @@ namespace greeenEats
             this.guna2GradientPanel13.SuspendLayout();
             this.guna2GradientPanel14.SuspendLayout();
             this.guna2GradientPanel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -311,6 +312,7 @@ namespace greeenEats
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel1.Controls.Add(this.guna2ImageButton1);
             this.guna2ShadowPanel1.Controls.Add(this.guna2PictureBox1);
             this.guna2ShadowPanel1.Controls.Add(this.Close_bt);
             this.guna2ShadowPanel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -506,22 +508,10 @@ namespace greeenEats
             this.shortEats_category.UseCompatibleTextRendering = true;
             this.shortEats_category.Click += new System.EventHandler(this.shortEats_category_Click);
             // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = global::greeenEats.Properties.Resources.G_EATS;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(13, 12);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(144, 30);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.guna2PictureBox1.TabIndex = 2;
-            this.guna2PictureBox1.TabStop = false;
-            // 
             // guna2Panel1
             // 
             this.guna2Panel1.BorderRadius = 15;
-            this.guna2Panel1.Controls.Add(this.guna2ImageButton1);
+            this.guna2Panel1.Controls.Add(this.gotoCheckoutBtn);
             this.guna2Panel1.Controls.Add(this.restaurant_name);
             this.guna2Panel1.FillColor = System.Drawing.Color.White;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 60);
@@ -543,22 +533,6 @@ namespace greeenEats
             this.restaurant_name.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.restaurant_name.UseCompatibleTextRendering = true;
             this.restaurant_name.Click += new System.EventHandler(this.restaurant_name_Click);
-            // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(84, 84);
-            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(84, 84);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(711, 3);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(83, 70);
-            this.guna2ImageButton1.TabIndex = 11;
-            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // guna2GradientPanel10
             // 
@@ -2122,6 +2096,54 @@ namespace greeenEats
             this.label42.TabIndex = 24;
             this.label42.Text = "Quantity";
             // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(84, 84);
+            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.Location = new System.Drawing.Point(162, 5);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(45, 42);
+            this.guna2ImageButton1.TabIndex = 11;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Image = global::greeenEats.Properties.Resources.G_EATS;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(13, 12);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(144, 30);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.guna2PictureBox1.TabIndex = 2;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // gotoCheckoutBtn
+            // 
+            this.gotoCheckoutBtn.Animated = true;
+            this.gotoCheckoutBtn.BackColor = System.Drawing.Color.Transparent;
+            this.gotoCheckoutBtn.BorderColor = System.Drawing.Color.OliveDrab;
+            this.gotoCheckoutBtn.BorderRadius = 15;
+            this.gotoCheckoutBtn.BorderThickness = 2;
+            this.gotoCheckoutBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.gotoCheckoutBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.gotoCheckoutBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.gotoCheckoutBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.gotoCheckoutBtn.FillColor = System.Drawing.Color.LimeGreen;
+            this.gotoCheckoutBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.gotoCheckoutBtn.ForeColor = System.Drawing.Color.White;
+            this.gotoCheckoutBtn.Location = new System.Drawing.Point(669, 16);
+            this.gotoCheckoutBtn.Name = "gotoCheckoutBtn";
+            this.gotoCheckoutBtn.Size = new System.Drawing.Size(121, 48);
+            this.gotoCheckoutBtn.TabIndex = 11;
+            this.gotoCheckoutBtn.Text = "CHECKOUT";
+            this.gotoCheckoutBtn.Click += new System.EventHandler(this.gotoCheckoutBtn_Click);
+            // 
             // foodSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2148,7 +2170,6 @@ namespace greeenEats
             this.flowLayoutPanel3.ResumeLayout(false);
             this.foodCard_shortEats.ResumeLayout(false);
             this.foodCard_shortEats.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.guna2GradientPanel10.ResumeLayout(false);
@@ -2173,6 +2194,7 @@ namespace greeenEats
             this.guna2GradientPanel14.PerformLayout();
             this.guna2GradientPanel15.ResumeLayout(false);
             this.guna2GradientPanel15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2305,5 +2327,6 @@ namespace greeenEats
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton16;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label42;
+        private Guna.UI2.WinForms.Guna2Button gotoCheckoutBtn;
     }
 }
