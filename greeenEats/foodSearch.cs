@@ -66,5 +66,20 @@ namespace greeenEats
         {
 
         }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void restaurant_name_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void shortEats_category_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
