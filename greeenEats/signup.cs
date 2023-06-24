@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.Charts;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -58,6 +59,14 @@ namespace greeenEats
         {
             staff_signup objstaffup = new staff_signup();
             objstaffup.Show();
+            this.Hide();
+        }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            starting_form objs = new starting_form();
+            objs.Show();
             this.Hide();
         }
     }
