@@ -28,5 +28,13 @@ namespace greeenEats
         {
             this.Close();
         }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            loginpage objs = new loginpage();
+            objs.Show();
+            this.Hide();
+        }
     }
 }

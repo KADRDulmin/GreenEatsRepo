@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(signup));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.signupAsStaff_btn = new Guna.UI2.WinForms.Guna2Button();
             this.create_acc = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -40,12 +41,13 @@
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.signupAsStaff_btn = new Guna.UI2.WinForms.Guna2Button();
+            this.BackButton = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -57,6 +59,7 @@
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.Controls.Add(this.BackButton);
             this.guna2Panel1.Controls.Add(this.signupAsStaff_btn);
             this.guna2Panel1.Controls.Add(this.create_acc);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel2);
@@ -74,6 +77,30 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(323, 500);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // signupAsStaff_btn
+            // 
+            this.signupAsStaff_btn.Animated = true;
+            this.signupAsStaff_btn.AutoRoundedCorners = true;
+            this.signupAsStaff_btn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.signupAsStaff_btn.BorderRadius = 14;
+            this.signupAsStaff_btn.BorderThickness = 2;
+            this.signupAsStaff_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.signupAsStaff_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.signupAsStaff_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.signupAsStaff_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.signupAsStaff_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.signupAsStaff_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.signupAsStaff_btn.ForeColor = System.Drawing.Color.White;
+            this.signupAsStaff_btn.HoverState.FillColor = System.Drawing.Color.ForestGreen;
+            this.signupAsStaff_btn.HoverState.ForeColor = System.Drawing.Color.White;
+            this.signupAsStaff_btn.IndicateFocus = true;
+            this.signupAsStaff_btn.Location = new System.Drawing.Point(166, 371);
+            this.signupAsStaff_btn.Name = "signupAsStaff_btn";
+            this.signupAsStaff_btn.Size = new System.Drawing.Size(124, 31);
+            this.signupAsStaff_btn.TabIndex = 25;
+            this.signupAsStaff_btn.Text = "Staff Account";
+            this.signupAsStaff_btn.Click += new System.EventHandler(this.signupAsStaff_btn_Click);
             // 
             // create_acc
             // 
@@ -104,7 +131,7 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(32, 408);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(158, 15);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(197, 18);
             this.guna2HtmlLabel2.TabIndex = 21;
             this.guna2HtmlLabel2.Text = "(already have an account?,login)";
             this.guna2HtmlLabel2.Click += new System.EventHandler(this.guna2HtmlLabel2_Click);
@@ -241,28 +268,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label2.Location = new System.Drawing.Point(55, 464);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(40, 16);
             this.label2.TabIndex = 13;
             this.label2.Text = "EXIT";
-            // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(32, 32);
-            this.guna2ImageButton1.IndicateFocus = true;
-            this.guna2ImageButton1.Location = new System.Drawing.Point(0, 446);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(64, 54);
-            this.guna2ImageButton1.TabIndex = 12;
-            this.guna2ImageButton1.UseTransparentBackground = true;
-            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // label1
             // 
@@ -271,7 +279,7 @@
             this.label1.ForeColor = System.Drawing.Color.LimeGreen;
             this.label1.Location = new System.Drawing.Point(32, 69);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(242, 46);
+            this.label1.Size = new System.Drawing.Size(303, 57);
             this.label1.TabIndex = 9;
             this.label1.Text = "GREEN EATS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -285,7 +293,7 @@
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.LimeGreen;
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(111, 25);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(71, 15);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(89, 18);
             this.guna2HtmlLabel1.TabIndex = 8;
             this.guna2HtmlLabel1.Text = "Welcome to,";
             this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -309,29 +317,46 @@
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // signupAsStaff_btn
+            // BackButton
             // 
-            this.signupAsStaff_btn.Animated = true;
-            this.signupAsStaff_btn.AutoRoundedCorners = true;
-            this.signupAsStaff_btn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.signupAsStaff_btn.BorderRadius = 14;
-            this.signupAsStaff_btn.BorderThickness = 2;
-            this.signupAsStaff_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.signupAsStaff_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.signupAsStaff_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.signupAsStaff_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.signupAsStaff_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.signupAsStaff_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.signupAsStaff_btn.ForeColor = System.Drawing.Color.White;
-            this.signupAsStaff_btn.HoverState.FillColor = System.Drawing.Color.ForestGreen;
-            this.signupAsStaff_btn.HoverState.ForeColor = System.Drawing.Color.White;
-            this.signupAsStaff_btn.IndicateFocus = true;
-            this.signupAsStaff_btn.Location = new System.Drawing.Point(166, 371);
-            this.signupAsStaff_btn.Name = "signupAsStaff_btn";
-            this.signupAsStaff_btn.Size = new System.Drawing.Size(124, 31);
-            this.signupAsStaff_btn.TabIndex = 25;
-            this.signupAsStaff_btn.Text = "Staff Account";
-            this.signupAsStaff_btn.Click += new System.EventHandler(this.signupAsStaff_btn_Click);
+            this.BackButton.BackColor = System.Drawing.Color.Transparent;
+            this.BackButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BackButton.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.BackButton.Cursor = System.Windows.Forms.Cursors.Default;
+            this.BackButton.HoverState.Image = global::greeenEats.Properties.Resources._340;
+            this.BackButton.HoverState.ImageSize = new System.Drawing.Size(25, 25);
+            this.BackButton.Image = global::greeenEats.Properties.Resources._340;
+            this.BackButton.ImageOffset = new System.Drawing.Point(0, 0);
+            this.BackButton.ImageRotate = 0F;
+            this.BackButton.ImageSize = new System.Drawing.Size(20, 20);
+            this.BackButton.IndicateFocus = true;
+            this.BackButton.Location = new System.Drawing.Point(0, -1);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.PressedState.Image = global::greeenEats.Properties.Resources._340;
+            this.BackButton.PressedState.ImageSize = new System.Drawing.Size(15, 15);
+            this.BackButton.Size = new System.Drawing.Size(31, 34);
+            this.BackButton.TabIndex = 1;
+            this.BackButton.UseTransparentBackground = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+            // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(32, 32);
+            this.guna2ImageButton1.IndicateFocus = true;
+            this.guna2ImageButton1.Location = new System.Drawing.Point(0, 446);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(64, 54);
+            this.guna2ImageButton1.TabIndex = 12;
+            this.guna2ImageButton1.UseTransparentBackground = true;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // signup
             // 
@@ -369,5 +394,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2Button create_acc;
         private Guna.UI2.WinForms.Guna2Button signupAsStaff_btn;
+        private Guna.UI2.WinForms.Guna2ImageButton BackButton;
+        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
     }
 }

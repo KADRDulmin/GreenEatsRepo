@@ -62,30 +62,11 @@ namespace greeenEats
 
         }
 
-        private void add_to_cart_Click(object sender, EventArgs e)
+        private void BackButton_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void guna2ImageButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void restaurant_name_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void shortEats_category_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gotoCheckoutBtn_Click(object sender, EventArgs e)
-        {
-            Cart objtoCart = new Cart();
-            objtoCart.Show();
+            this.Close();
+            ChooseForm objs = new ChooseForm();
+            objs.Show();
             this.Hide();
         }
     }

@@ -33,6 +33,7 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.staffLogin_btn = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.login_btn = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -40,9 +41,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.gunaStackedBarDataset1 = new Guna.Charts.WinForms.GunaStackedBarDataset();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.BackButton = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Panel1.SuspendLayout();
             this.staffLogin_btn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -63,6 +64,7 @@
             // 
             // staffLogin_btn
             // 
+            this.staffLogin_btn.Controls.Add(this.BackButton);
             this.staffLogin_btn.Controls.Add(this.guna2Button1);
             this.staffLogin_btn.Controls.Add(this.login_btn);
             this.staffLogin_btn.Controls.Add(this.label2);
@@ -78,6 +80,30 @@
             this.staffLogin_btn.Size = new System.Drawing.Size(323, 500);
             this.staffLogin_btn.TabIndex = 1;
             this.staffLogin_btn.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.AccessibleName = "login_btn";
+            this.guna2Button1.Animated = true;
+            this.guna2Button1.AutoRoundedCorners = true;
+            this.guna2Button1.BorderRadius = 14;
+            this.guna2Button1.BorderThickness = 2;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.LimeGreen;
+            this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.IndicateFocus = true;
+            this.guna2Button1.Location = new System.Drawing.Point(167, 332);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(123, 31);
+            this.guna2Button1.TabIndex = 11;
+            this.guna2Button1.Text = "StaffLogin";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // login_btn
             // 
@@ -110,7 +136,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label2.Location = new System.Drawing.Point(55, 464);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(40, 16);
             this.label2.TabIndex = 9;
             this.label2.Text = "EXIT";
             // 
@@ -173,7 +199,7 @@
             this.label1.ForeColor = System.Drawing.Color.LimeGreen;
             this.label1.Location = new System.Drawing.Point(32, 80);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(242, 46);
+            this.label1.Size = new System.Drawing.Size(303, 57);
             this.label1.TabIndex = 4;
             this.label1.Text = "GREEN EATS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -186,7 +212,7 @@
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.LimeGreen;
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(107, 31);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(71, 15);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(89, 18);
             this.guna2HtmlLabel1.TabIndex = 3;
             this.guna2HtmlLabel1.Text = "Welcome to,";
             this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -194,30 +220,6 @@
             // gunaStackedBarDataset1
             // 
             this.gunaStackedBarDataset1.Label = "StackedBar1";
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.AccessibleName = "login_btn";
-            this.guna2Button1.Animated = true;
-            this.guna2Button1.AutoRoundedCorners = true;
-            this.guna2Button1.BorderRadius = 14;
-            this.guna2Button1.BorderThickness = 2;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.LimeGreen;
-            this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.IndicateFocus = true;
-            this.guna2Button1.Location = new System.Drawing.Point(167, 332);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(123, 31);
-            this.guna2Button1.TabIndex = 11;
-            this.guna2Button1.Text = "StaffLogin";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2ImageButton1
             // 
@@ -252,6 +254,28 @@
             this.guna2PictureBox1.UseTransparentBackground = true;
             this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
+            // BackButton
+            // 
+            this.BackButton.BackColor = System.Drawing.Color.Transparent;
+            this.BackButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BackButton.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.BackButton.Cursor = System.Windows.Forms.Cursors.Default;
+            this.BackButton.HoverState.Image = global::greeenEats.Properties.Resources._340;
+            this.BackButton.HoverState.ImageSize = new System.Drawing.Size(25, 25);
+            this.BackButton.Image = global::greeenEats.Properties.Resources._340;
+            this.BackButton.ImageOffset = new System.Drawing.Point(0, 0);
+            this.BackButton.ImageRotate = 0F;
+            this.BackButton.ImageSize = new System.Drawing.Size(20, 20);
+            this.BackButton.IndicateFocus = true;
+            this.BackButton.Location = new System.Drawing.Point(0, 0);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.PressedState.Image = global::greeenEats.Properties.Resources._340;
+            this.BackButton.PressedState.ImageSize = new System.Drawing.Size(15, 15);
+            this.BackButton.Size = new System.Drawing.Size(31, 34);
+            this.BackButton.TabIndex = 12;
+            this.BackButton.UseTransparentBackground = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+            // 
             // loginpage
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -285,5 +309,6 @@
         public Guna.Charts.WinForms.GunaStackedBarDataset gunaStackedBarDataset1;
         private Guna.UI2.WinForms.Guna2Button login_btn;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2ImageButton BackButton;
     }
 }

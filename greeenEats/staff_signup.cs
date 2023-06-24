@@ -26,5 +26,18 @@ namespace greeenEats
         {
 
         }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            signup objs = new signup();
+            objs.Show();
+            this.Hide();
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
