@@ -30,8 +30,10 @@ namespace greeenEats
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(foodSearch));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.Close_bt = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.restuarant_name = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
@@ -51,30 +53,24 @@ namespace greeenEats
             this.guna2CircleButton18 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.label4 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
-            this.quantityDecree_main = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.priceMaincourse = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.guna2GradientPanel5 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2CircleButton19 = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
             this.label46 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
+            this.guna2ShadowPanel12 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2CircleButton19 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
             this.label48 = new System.Windows.Forms.Label();
             this.guna2CircleButton20 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.label49 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
-            this.guna2GradientPanel6 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2CircleButton21 = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.guna2Button11 = new Guna.UI2.WinForms.Guna2Button();
             this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
+            this.guna2ShadowPanel13 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2CircleButton21 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.guna2Button11 = new Guna.UI2.WinForms.Guna2Button();
             this.label53 = new System.Windows.Forms.Label();
             this.guna2CircleButton22 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
-            this.guna2GradientPanel7 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2CircleButton23 = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.guna2Button12 = new Guna.UI2.WinForms.Guna2Button();
             this.label56 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
             this.category1 = new System.Windows.Forms.Label();
@@ -123,27 +119,36 @@ namespace greeenEats
             this.guna2CircleButton11 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.label28 = new System.Windows.Forms.Label();
+            this.guna2CircleButton12 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.guna2CircleButton12 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.guna2GradientPanel14 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2ShadowPanel5 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2CircleButton7 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.label18 = new System.Windows.Forms.Label();
+            this.guna2CircleButton8 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.guna2ShadowPanel8 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2CircleButton13 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.label33 = new System.Windows.Forms.Label();
+            this.guna2CircleButton14 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
-            this.guna2CircleButton14 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
-            this.guna2GradientPanel15 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2ShadowPanel9 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2CircleButton15 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
             this.label38 = new System.Windows.Forms.Label();
+            this.guna2CircleButton16 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
-            this.guna2CircleButton16 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.Category_3 = new System.Windows.Forms.Label();
@@ -174,117 +179,6 @@ namespace greeenEats
             // 
             this.guna2Elipse1.TargetControl = this;
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.flowLayoutPanel1.Controls.Add(this.guna2GradientPanel8);
-            this.flowLayoutPanel1.Controls.Add(this.guna2GradientPanel3);
-            this.flowLayoutPanel1.Controls.Add(this.guna2GradientPanel1);
-            this.flowLayoutPanel1.Controls.Add(this.guna2GradientPanel2);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 142);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(800, 308);
-            this.flowLayoutPanel1.TabIndex = 3;
-            // 
-            // guna2GradientPanel3
-            // 
-            this.guna2GradientPanel3.AutoSize = true;
-            this.guna2GradientPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel3.BorderRadius = 15;
-            this.guna2GradientPanel3.BorderThickness = 5;
-            this.guna2GradientPanel3.Controls.Add(this.flowLayoutPanel4);
-            this.guna2GradientPanel3.Controls.Add(this.category1);
-            this.guna2GradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.guna2GradientPanel3.Location = new System.Drawing.Point(3, 234);
-            this.guna2GradientPanel3.Name = "guna2GradientPanel3";
-            this.guna2GradientPanel3.Size = new System.Drawing.Size(772, 225);
-            this.guna2GradientPanel3.TabIndex = 10;
-            // 
-            // flowLayoutPanel4
-            // 
-            this.flowLayoutPanel4.AutoScroll = true;
-            this.flowLayoutPanel4.AutoScrollMargin = new System.Drawing.Size(100, 100);
-            this.flowLayoutPanel4.AutoSize = true;
-            this.flowLayoutPanel4.Controls.Add(this.mainCourse_Card);
-            this.flowLayoutPanel4.Controls.Add(this.guna2GradientPanel5);
-            this.flowLayoutPanel4.Controls.Add(this.guna2GradientPanel6);
-            this.flowLayoutPanel4.Controls.Add(this.guna2GradientPanel7);
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(3, 34);
-            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(766, 188);
-            this.flowLayoutPanel4.TabIndex = 9;
-            // 
-            // category1
-            // 
-            this.category1.AutoSize = true;
-            this.category1.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.category1.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.category1.Location = new System.Drawing.Point(7, 0);
-            this.category1.Name = "category1";
-            this.category1.Size = new System.Drawing.Size(157, 37);
-            this.category1.TabIndex = 8;
-            this.category1.Text = "Main Corse";
-            this.category1.TextAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.category1.UseCompatibleTextRendering = true;
-            // 
-            // guna2GradientPanel1
-            // 
-            this.guna2GradientPanel1.AutoSize = true;
-            this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel1.BorderRadius = 15;
-            this.guna2GradientPanel1.BorderThickness = 5;
-            this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(3, 465);
-            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(0, 0);
-            this.guna2GradientPanel1.TabIndex = 10;
-            // 
-            // guna2GradientPanel2
-            // 
-            this.guna2GradientPanel2.AutoSize = true;
-            this.guna2GradientPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel2.BorderRadius = 15;
-            this.guna2GradientPanel2.BorderThickness = 5;
-            this.guna2GradientPanel2.Controls.Add(this.flowLayoutPanel2);
-            this.guna2GradientPanel2.Controls.Add(this.Category_3);
-            this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(9, 465);
-            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(766, 224);
-            this.guna2GradientPanel2.TabIndex = 2;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.AutoScroll = true;
-            this.flowLayoutPanel2.AutoScrollMargin = new System.Drawing.Size(100, 100);
-            this.flowLayoutPanel2.AutoSize = true;
-            this.flowLayoutPanel2.Controls.Add(this.guna2GradientPanel12);
-            this.flowLayoutPanel2.Controls.Add(this.guna2GradientPanel13);
-            this.flowLayoutPanel2.Controls.Add(this.guna2GradientPanel14);
-            this.flowLayoutPanel2.Controls.Add(this.guna2GradientPanel15);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 34);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(760, 187);
-            this.flowLayoutPanel2.TabIndex = 9;
-            // 
-            // Category_3
-            // 
-            this.Category_3.AutoSize = true;
-            this.Category_3.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Category_3.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.Category_3.Location = new System.Drawing.Point(3, 4);
-            this.Category_3.Name = "Category_3";
-            this.Category_3.Size = new System.Drawing.Size(110, 37);
-            this.Category_3.TabIndex = 8;
-            this.Category_3.Text = "Drinks\r\n";
-            this.Category_3.TextAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.Category_3.UseCompatibleTextRendering = true;
-            // 
             // Close_bt
             // 
             this.Close_bt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -313,7 +207,7 @@ namespace greeenEats
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(1067, 101);
             this.guna2ShadowPanel1.TabIndex = 2;
             // 
-            // guna2GradientPanel8
+            // restuarant_name
             // 
             this.restuarant_name.AutoSize = true;
             this.restuarant_name.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1060,7 +954,7 @@ namespace greeenEats
             this.label3.TabIndex = 13;
             this.label3.Text = "Quantity";
             // 
-            // pricetag
+            // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1074,7 +968,7 @@ namespace greeenEats
             this.label5.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.label5.UseCompatibleTextRendering = true;
             // 
-            // Quantity_decre
+            // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1102,7 +996,7 @@ namespace greeenEats
             this.label7.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.label7.UseCompatibleTextRendering = true;
             // 
-            // shortEats_category
+            // guna2ShadowPanel3
             // 
             this.guna2ShadowPanel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel3.Controls.Add(this.guna2CircleButton3);
@@ -1123,19 +1017,16 @@ namespace greeenEats
             // 
             // guna2CircleButton3
             // 
-            this.guna2CircleButton3.BorderColor = System.Drawing.Color.DarkGreen;
-            this.guna2CircleButton3.BorderThickness = 2;
             this.guna2CircleButton3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2CircleButton3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2CircleButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2CircleButton3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2CircleButton3.FillColor = System.Drawing.Color.SeaGreen;
+            this.guna2CircleButton3.FillColor = System.Drawing.Color.Black;
             this.guna2CircleButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2CircleButton3.ForeColor = System.Drawing.Color.White;
             this.guna2CircleButton3.Location = new System.Drawing.Point(39, 166);
             this.guna2CircleButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2CircleButton3.Name = "guna2CircleButton3";
-            this.guna2CircleButton3.PressedColor = System.Drawing.Color.GreenYellow;
             this.guna2CircleButton3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton3.Size = new System.Drawing.Size(37, 34);
             this.guna2CircleButton3.TabIndex = 20;
@@ -1144,15 +1035,12 @@ namespace greeenEats
             // guna2Button2
             // 
             this.guna2Button2.Animated = true;
-            this.guna2Button2.AutoRoundedCorners = true;
-            this.guna2Button2.BorderColor = System.Drawing.Color.DarkGreen;
-            this.guna2Button2.BorderRadius = 12;
-            this.guna2Button2.BorderThickness = 2;
+            this.guna2Button2.DefaultAutoSize = true;
             this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.MediumSeaGreen;
+            this.guna2Button2.FillColor = System.Drawing.Color.Black;
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.Location = new System.Drawing.Point(57, 220);
@@ -1217,25 +1105,6 @@ namespace greeenEats
             this.label10.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.label10.UseCompatibleTextRendering = true;
             // 
-            // guna2CircleButton4
-            // 
-            this.guna2CircleButton4.BorderColor = System.Drawing.Color.DarkGreen;
-            this.guna2CircleButton4.BorderThickness = 2;
-            this.guna2CircleButton4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2CircleButton4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2CircleButton4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2CircleButton4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2CircleButton4.FillColor = System.Drawing.Color.SeaGreen;
-            this.guna2CircleButton4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2CircleButton4.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton4.Location = new System.Drawing.Point(109, 99);
-            this.guna2CircleButton4.Name = "guna2CircleButton4";
-            this.guna2CircleButton4.PressedColor = System.Drawing.Color.GreenYellow;
-            this.guna2CircleButton4.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton4.Size = new System.Drawing.Size(28, 28);
-            this.guna2CircleButton4.TabIndex = 25;
-            this.guna2CircleButton4.Text = "-";
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -1264,7 +1133,7 @@ namespace greeenEats
             this.label12.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.label12.UseCompatibleTextRendering = true;
             // 
-            // guna2GradientPanel11
+            // guna2ShadowPanel4
             // 
             this.guna2ShadowPanel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel4.Controls.Add(this.guna2CircleButton5);
@@ -1285,19 +1154,16 @@ namespace greeenEats
             // 
             // guna2CircleButton5
             // 
-            this.guna2CircleButton5.BorderColor = System.Drawing.Color.DarkGreen;
-            this.guna2CircleButton5.BorderThickness = 2;
             this.guna2CircleButton5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2CircleButton5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2CircleButton5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2CircleButton5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2CircleButton5.FillColor = System.Drawing.Color.SeaGreen;
+            this.guna2CircleButton5.FillColor = System.Drawing.Color.Black;
             this.guna2CircleButton5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2CircleButton5.ForeColor = System.Drawing.Color.White;
             this.guna2CircleButton5.Location = new System.Drawing.Point(39, 166);
             this.guna2CircleButton5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2CircleButton5.Name = "guna2CircleButton5";
-            this.guna2CircleButton5.PressedColor = System.Drawing.Color.GreenYellow;
             this.guna2CircleButton5.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton5.Size = new System.Drawing.Size(37, 34);
             this.guna2CircleButton5.TabIndex = 20;
@@ -1306,15 +1172,12 @@ namespace greeenEats
             // guna2Button3
             // 
             this.guna2Button3.Animated = true;
-            this.guna2Button3.AutoRoundedCorners = true;
-            this.guna2Button3.BorderColor = System.Drawing.Color.DarkGreen;
-            this.guna2Button3.BorderRadius = 12;
-            this.guna2Button3.BorderThickness = 2;
+            this.guna2Button3.DefaultAutoSize = true;
             this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.MediumSeaGreen;
+            this.guna2Button3.FillColor = System.Drawing.Color.Black;
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.Location = new System.Drawing.Point(57, 220);
@@ -1379,25 +1242,6 @@ namespace greeenEats
             this.label15.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.label15.UseCompatibleTextRendering = true;
             // 
-            // guna2CircleButton6
-            // 
-            this.guna2CircleButton6.BorderColor = System.Drawing.Color.DarkGreen;
-            this.guna2CircleButton6.BorderThickness = 2;
-            this.guna2CircleButton6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2CircleButton6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2CircleButton6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2CircleButton6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2CircleButton6.FillColor = System.Drawing.Color.SeaGreen;
-            this.guna2CircleButton6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2CircleButton6.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton6.Location = new System.Drawing.Point(109, 99);
-            this.guna2CircleButton6.Name = "guna2CircleButton6";
-            this.guna2CircleButton6.PressedColor = System.Drawing.Color.GreenYellow;
-            this.guna2CircleButton6.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton6.Size = new System.Drawing.Size(28, 28);
-            this.guna2CircleButton6.TabIndex = 25;
-            this.guna2CircleButton6.Text = "-";
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -1426,7 +1270,7 @@ namespace greeenEats
             this.label17.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.label17.UseCompatibleTextRendering = true;
             // 
-            // guna2GradientPanel16
+            // guna2ShadowPanel6
             // 
             this.guna2ShadowPanel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel6.Controls.Add(this.guna2CircleButton9);
@@ -1447,19 +1291,16 @@ namespace greeenEats
             // 
             // guna2CircleButton9
             // 
-            this.guna2CircleButton9.BorderColor = System.Drawing.Color.DarkGreen;
-            this.guna2CircleButton9.BorderThickness = 2;
             this.guna2CircleButton9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2CircleButton9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2CircleButton9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2CircleButton9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2CircleButton9.FillColor = System.Drawing.Color.SeaGreen;
+            this.guna2CircleButton9.FillColor = System.Drawing.Color.Black;
             this.guna2CircleButton9.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2CircleButton9.ForeColor = System.Drawing.Color.White;
             this.guna2CircleButton9.Location = new System.Drawing.Point(39, 166);
             this.guna2CircleButton9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2CircleButton9.Name = "guna2CircleButton9";
-            this.guna2CircleButton9.PressedColor = System.Drawing.Color.GreenYellow;
             this.guna2CircleButton9.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton9.Size = new System.Drawing.Size(37, 34);
             this.guna2CircleButton9.TabIndex = 20;
@@ -1468,15 +1309,12 @@ namespace greeenEats
             // guna2Button5
             // 
             this.guna2Button5.Animated = true;
-            this.guna2Button5.AutoRoundedCorners = true;
-            this.guna2Button5.BorderColor = System.Drawing.Color.DarkGreen;
-            this.guna2Button5.BorderRadius = 12;
-            this.guna2Button5.BorderThickness = 2;
+            this.guna2Button5.DefaultAutoSize = true;
             this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.FillColor = System.Drawing.Color.MediumSeaGreen;
+            this.guna2Button5.FillColor = System.Drawing.Color.Black;
             this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button5.ForeColor = System.Drawing.Color.White;
             this.guna2Button5.Location = new System.Drawing.Point(57, 220);
@@ -1540,25 +1378,6 @@ namespace greeenEats
             this.label25.Text = "120";
             this.label25.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.label25.UseCompatibleTextRendering = true;
-            // 
-            // guna2CircleButton10
-            // 
-            this.guna2CircleButton10.BorderColor = System.Drawing.Color.DarkGreen;
-            this.guna2CircleButton10.BorderThickness = 2;
-            this.guna2CircleButton10.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2CircleButton10.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2CircleButton10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2CircleButton10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2CircleButton10.FillColor = System.Drawing.Color.SeaGreen;
-            this.guna2CircleButton10.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2CircleButton10.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton10.Location = new System.Drawing.Point(109, 99);
-            this.guna2CircleButton10.Name = "guna2CircleButton10";
-            this.guna2CircleButton10.PressedColor = System.Drawing.Color.GreenYellow;
-            this.guna2CircleButton10.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton10.Size = new System.Drawing.Size(28, 28);
-            this.guna2CircleButton10.TabIndex = 25;
-            this.guna2CircleButton10.Text = "-";
             // 
             // label26
             // 
@@ -1654,19 +1473,16 @@ namespace greeenEats
             // 
             // guna2CircleButton11
             // 
-            this.guna2CircleButton11.BorderColor = System.Drawing.Color.DarkGreen;
-            this.guna2CircleButton11.BorderThickness = 2;
             this.guna2CircleButton11.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2CircleButton11.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2CircleButton11.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2CircleButton11.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2CircleButton11.FillColor = System.Drawing.Color.SeaGreen;
+            this.guna2CircleButton11.FillColor = System.Drawing.Color.Black;
             this.guna2CircleButton11.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2CircleButton11.ForeColor = System.Drawing.Color.White;
             this.guna2CircleButton11.Location = new System.Drawing.Point(39, 166);
             this.guna2CircleButton11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2CircleButton11.Name = "guna2CircleButton11";
-            this.guna2CircleButton11.PressedColor = System.Drawing.Color.GreenYellow;
             this.guna2CircleButton11.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton11.Size = new System.Drawing.Size(37, 34);
             this.guna2CircleButton11.TabIndex = 20;
@@ -1675,15 +1491,12 @@ namespace greeenEats
             // guna2Button6
             // 
             this.guna2Button6.Animated = true;
-            this.guna2Button6.AutoRoundedCorners = true;
-            this.guna2Button6.BorderColor = System.Drawing.Color.DarkGreen;
-            this.guna2Button6.BorderRadius = 12;
-            this.guna2Button6.BorderThickness = 2;
+            this.guna2Button6.DefaultAutoSize = true;
             this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button6.FillColor = System.Drawing.Color.MediumSeaGreen;
+            this.guna2Button6.FillColor = System.Drawing.Color.Black;
             this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button6.ForeColor = System.Drawing.Color.White;
             this.guna2Button6.Location = new System.Drawing.Point(57, 220);
@@ -1748,25 +1561,6 @@ namespace greeenEats
             this.label30.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.label30.UseCompatibleTextRendering = true;
             // 
-            // guna2CircleButton12
-            // 
-            this.guna2CircleButton12.BorderColor = System.Drawing.Color.DarkGreen;
-            this.guna2CircleButton12.BorderThickness = 2;
-            this.guna2CircleButton12.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2CircleButton12.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2CircleButton12.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2CircleButton12.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2CircleButton12.FillColor = System.Drawing.Color.SeaGreen;
-            this.guna2CircleButton12.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2CircleButton12.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton12.Location = new System.Drawing.Point(109, 99);
-            this.guna2CircleButton12.Name = "guna2CircleButton12";
-            this.guna2CircleButton12.PressedColor = System.Drawing.Color.GreenYellow;
-            this.guna2CircleButton12.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton12.Size = new System.Drawing.Size(28, 28);
-            this.guna2CircleButton12.TabIndex = 25;
-            this.guna2CircleButton12.Text = "-";
-            // 
             // label31
             // 
             this.label31.AutoSize = true;
@@ -1795,7 +1589,7 @@ namespace greeenEats
             this.label32.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.label32.UseCompatibleTextRendering = true;
             // 
-            // guna2GradientPanel14
+            // guna2ShadowPanel5
             // 
             this.guna2ShadowPanel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel5.Controls.Add(this.guna2CircleButton7);
@@ -1953,19 +1747,16 @@ namespace greeenEats
             // 
             // guna2CircleButton13
             // 
-            this.guna2CircleButton13.BorderColor = System.Drawing.Color.DarkGreen;
-            this.guna2CircleButton13.BorderThickness = 2;
             this.guna2CircleButton13.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2CircleButton13.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2CircleButton13.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2CircleButton13.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2CircleButton13.FillColor = System.Drawing.Color.SeaGreen;
+            this.guna2CircleButton13.FillColor = System.Drawing.Color.Black;
             this.guna2CircleButton13.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2CircleButton13.ForeColor = System.Drawing.Color.White;
             this.guna2CircleButton13.Location = new System.Drawing.Point(39, 166);
             this.guna2CircleButton13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2CircleButton13.Name = "guna2CircleButton13";
-            this.guna2CircleButton13.PressedColor = System.Drawing.Color.GreenYellow;
             this.guna2CircleButton13.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton13.Size = new System.Drawing.Size(37, 34);
             this.guna2CircleButton13.TabIndex = 20;
@@ -1974,15 +1765,12 @@ namespace greeenEats
             // guna2Button7
             // 
             this.guna2Button7.Animated = true;
-            this.guna2Button7.AutoRoundedCorners = true;
-            this.guna2Button7.BorderColor = System.Drawing.Color.DarkGreen;
-            this.guna2Button7.BorderRadius = 12;
-            this.guna2Button7.BorderThickness = 2;
+            this.guna2Button7.DefaultAutoSize = true;
             this.guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button7.FillColor = System.Drawing.Color.MediumSeaGreen;
+            this.guna2Button7.FillColor = System.Drawing.Color.Black;
             this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button7.ForeColor = System.Drawing.Color.White;
             this.guna2Button7.Location = new System.Drawing.Point(57, 220);
@@ -2047,25 +1835,6 @@ namespace greeenEats
             this.label35.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.label35.UseCompatibleTextRendering = true;
             // 
-            // guna2CircleButton14
-            // 
-            this.guna2CircleButton14.BorderColor = System.Drawing.Color.DarkGreen;
-            this.guna2CircleButton14.BorderThickness = 2;
-            this.guna2CircleButton14.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2CircleButton14.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2CircleButton14.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2CircleButton14.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2CircleButton14.FillColor = System.Drawing.Color.SeaGreen;
-            this.guna2CircleButton14.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2CircleButton14.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton14.Location = new System.Drawing.Point(109, 99);
-            this.guna2CircleButton14.Name = "guna2CircleButton14";
-            this.guna2CircleButton14.PressedColor = System.Drawing.Color.GreenYellow;
-            this.guna2CircleButton14.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton14.Size = new System.Drawing.Size(28, 28);
-            this.guna2CircleButton14.TabIndex = 25;
-            this.guna2CircleButton14.Text = "-";
-            // 
             // label36
             // 
             this.label36.AutoSize = true;
@@ -2094,7 +1863,7 @@ namespace greeenEats
             this.label37.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.label37.UseCompatibleTextRendering = true;
             // 
-            // guna2GradientPanel15
+            // guna2ShadowPanel9
             // 
             this.guna2ShadowPanel9.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel9.Controls.Add(this.guna2CircleButton15);
@@ -2115,19 +1884,16 @@ namespace greeenEats
             // 
             // guna2CircleButton15
             // 
-            this.guna2CircleButton15.BorderColor = System.Drawing.Color.DarkGreen;
-            this.guna2CircleButton15.BorderThickness = 2;
             this.guna2CircleButton15.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2CircleButton15.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2CircleButton15.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2CircleButton15.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2CircleButton15.FillColor = System.Drawing.Color.SeaGreen;
+            this.guna2CircleButton15.FillColor = System.Drawing.Color.Black;
             this.guna2CircleButton15.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2CircleButton15.ForeColor = System.Drawing.Color.White;
             this.guna2CircleButton15.Location = new System.Drawing.Point(39, 166);
             this.guna2CircleButton15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2CircleButton15.Name = "guna2CircleButton15";
-            this.guna2CircleButton15.PressedColor = System.Drawing.Color.GreenYellow;
             this.guna2CircleButton15.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton15.Size = new System.Drawing.Size(37, 34);
             this.guna2CircleButton15.TabIndex = 20;
@@ -2136,15 +1902,12 @@ namespace greeenEats
             // guna2Button8
             // 
             this.guna2Button8.Animated = true;
-            this.guna2Button8.AutoRoundedCorners = true;
-            this.guna2Button8.BorderColor = System.Drawing.Color.DarkGreen;
-            this.guna2Button8.BorderRadius = 12;
-            this.guna2Button8.BorderThickness = 2;
+            this.guna2Button8.DefaultAutoSize = true;
             this.guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button8.FillColor = System.Drawing.Color.MediumSeaGreen;
+            this.guna2Button8.FillColor = System.Drawing.Color.Black;
             this.guna2Button8.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button8.ForeColor = System.Drawing.Color.White;
             this.guna2Button8.Location = new System.Drawing.Point(57, 220);
@@ -2208,25 +1971,6 @@ namespace greeenEats
             this.label40.Text = "120";
             this.label40.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.label40.UseCompatibleTextRendering = true;
-            // 
-            // guna2CircleButton16
-            // 
-            this.guna2CircleButton16.BorderColor = System.Drawing.Color.DarkGreen;
-            this.guna2CircleButton16.BorderThickness = 2;
-            this.guna2CircleButton16.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2CircleButton16.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2CircleButton16.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2CircleButton16.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2CircleButton16.FillColor = System.Drawing.Color.SeaGreen;
-            this.guna2CircleButton16.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2CircleButton16.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton16.Location = new System.Drawing.Point(109, 99);
-            this.guna2CircleButton16.Name = "guna2CircleButton16";
-            this.guna2CircleButton16.PressedColor = System.Drawing.Color.GreenYellow;
-            this.guna2CircleButton16.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton16.Size = new System.Drawing.Size(28, 28);
-            this.guna2CircleButton16.TabIndex = 25;
-            this.guna2CircleButton16.Text = "-";
             // 
             // label41
             // 
@@ -2303,6 +2047,8 @@ namespace greeenEats
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "foodSearch";
             this.Text = "foodSearch";
+            this.guna2ShadowPanel1.ResumeLayout(false);
+            this.guna2ShadowPanel1.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.guna2GradientPanel3.ResumeLayout(false);
@@ -2345,6 +2091,9 @@ namespace greeenEats
         #endregion
 
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
+        private Guna.UI2.WinForms.Guna2ControlBox Close_bt;
+        private System.Windows.Forms.Label restuarant_name;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
@@ -2353,121 +2102,114 @@ namespace greeenEats
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
         private System.Windows.Forms.Label category1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
-        private Guna.UI2.WinForms.Guna2ControlBox Close_bt;
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel8;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
-        private Guna.UI2.WinForms.Guna2GradientPanel foodCard_shortEats;
-        private Guna.UI2.WinForms.Guna2CircleButton quantity_incree;
-        private Guna.UI2.WinForms.Guna2Button addToCart;
-        private System.Windows.Forms.Label foodName_shortEats;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label pricetag;
-        private Guna.UI2.WinForms.Guna2CircleButton Quantity_decre;
-        private System.Windows.Forms.Label price_food_shortEats;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label shortEats_category;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private System.Windows.Forms.Label restaurant_name;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel10;
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton4;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel11;
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton5;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton6;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel16;
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton9;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label25;
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton10;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private Guna.UI2.WinForms.Guna2GradientPanel mainCourse_Card;
-        private Guna.UI2.WinForms.Guna2CircleButton quantityIncree_main;
-        private Guna.UI2.WinForms.Guna2Button mainAddToCart;
-        private System.Windows.Forms.Label mainFoodName;
+        private System.Windows.Forms.Label category_2;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel10;
+        private Guna.UI2.WinForms.Guna2CircleButton quantity_increase;
+        private Guna.UI2.WinForms.Guna2Button add_to_cart;
+        private System.Windows.Forms.Label label44;
+        private Guna.UI2.WinForms.Guna2CircleButton quantity_decrease;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label price;
+        private System.Windows.Forms.Label price_lb;
+        private System.Windows.Forms.Label food_name;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel11;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton17;
+        private Guna.UI2.WinForms.Guna2Button guna2Button9;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton18;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label43;
-        private Guna.UI2.WinForms.Guna2CircleButton quantityDecree_main;
-        private System.Windows.Forms.Label priceMaincourse;
-        private System.Windows.Forms.Label label45;
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel5;
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton19;
-        private Guna.UI2.WinForms.Guna2Button guna2Button10;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label47;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel12;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton19;
+        private Guna.UI2.WinForms.Guna2Button guna2Button10;
         private System.Windows.Forms.Label label48;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton20;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label label50;
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel6;
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton21;
-        private Guna.UI2.WinForms.Guna2Button guna2Button11;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label52;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel13;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton21;
+        private Guna.UI2.WinForms.Guna2Button guna2Button11;
         private System.Windows.Forms.Label label53;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton22;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label55;
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel7;
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton23;
-        private Guna.UI2.WinForms.Guna2Button guna2Button12;
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.Label label58;
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton24;
-        private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.Label label60;
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel12;
-        private Guna.UI2.WinForms.Guna2CircleButton drinksQuantityIncree;
-        private Guna.UI2.WinForms.Guna2Button drinksAddToCart;
-        private System.Windows.Forms.Label drinksName;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private Guna.UI2.WinForms.Guna2CircleButton drinksQuantityDecree;
-        private System.Windows.Forms.Label drinksPrice;
-        private System.Windows.Forms.Label label22;
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel13;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel2;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel3;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton3;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private System.Windows.Forms.Label label8;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton4;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel4;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton5;
+        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private System.Windows.Forms.Label label13;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton6;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel6;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton9;
+        private Guna.UI2.WinForms.Guna2Button guna2Button5;
+        private System.Windows.Forms.Label label23;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton10;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel7;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton11;
         private Guna.UI2.WinForms.Guna2Button guna2Button6;
         private System.Windows.Forms.Label label28;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton12;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton12;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel14;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel5;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton7;
+        private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private System.Windows.Forms.Label label18;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton8;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel8;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton13;
         private Guna.UI2.WinForms.Guna2Button guna2Button7;
         private System.Windows.Forms.Label label33;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton14;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton14;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel15;
+        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel9;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton15;
         private Guna.UI2.WinForms.Guna2Button guna2Button8;
         private System.Windows.Forms.Label label38;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton16;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton16;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label42;
         private Guna.UI2.WinForms.Guna2ImageButton BackButton;
