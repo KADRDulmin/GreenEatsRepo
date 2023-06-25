@@ -39,7 +39,9 @@ namespace greeenEats
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-
+            foodSearch objfood = new foodSearch();
+            objfood.Show();
+            this.Hide();
         }
 
         private void guna2Panel2_Paint(object sender, PaintEventArgs e)
