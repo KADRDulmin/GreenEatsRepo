@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net.Http;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace greeenEats
 {
@@ -15,6 +18,30 @@ namespace greeenEats
         public loginpage()
         {
             InitializeComponent();
+        }
+
+        private static readonly HttpClient client = new HttpClient();
+
+        private async Task<string> MakeApiCall(string url, string email, string password)
+        {
+            var payload = new
+            {
+                email = email,
+                password = password
+            };
+
+            string jsonPayload = JsonConvert.SerializeObject(payload);
+            var content = new StringContent(jsonPayload, Encoding.UTF8, "application/json");
+
+            HttpResponseMessage response = await client.PostAsync(url, content);
+
+            if (response.IsSuccessStatusCode)
+            {
+                string responseBody = await response.Content.ReadAsStringAsync();
+                return responseBody;
+            }
+
+            throw new Exception($"API call failed with status code {response.StatusCode}");
         }
 
         private void guna2Panel2_Paint(object sender, PaintEventArgs e)
@@ -32,11 +59,24 @@ namespace greeenEats
 
         }
 
-        private void login_btn_Click(object sender, EventArgs e)
+        private async void login_btn_Click(object sender, EventArgs e)
         {
+            string apiUrl = "http://159.89.203.249:2001/api/client/login";
+            string email = entered_username.Text;
+            string password = enter_password_login.Text;
             ChooseForm objhf = new ChooseForm();
-            objhf.Show();
-            this.Hide();
+            try
+            {
+                string response = await MakeApiCall(apiUrl, email, password);
+                Console.WriteLine(response);              
+                objhf.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred: {ex.Message}");
+            }
+
 
         }
 
